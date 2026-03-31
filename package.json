@@ -1,0 +1,56 @@
+{
+  "name": "@dofollo/nextjs",
+  "version": "1.2.1",
+  "description": "Apply Dofollo SEO fixes to your Next.js site automatically",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./middleware": {
+      "types": "./dist/middleware.d.ts",
+      "import": "./dist/middleware.mjs",
+      "require": "./dist/middleware.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/middleware.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts src/middleware.ts --format cjs,esm --dts --watch"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "next": "^14.2.30",
+    "react": "^18.3.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [
+    "nextjs",
+    "seo",
+    "dofollo",
+    "internal-linking",
+    "schema"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dofollo/nextjs"
+  }
+}
