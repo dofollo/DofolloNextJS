@@ -1,6 +1,6 @@
 # `@dofollo/nextjs`
 
-Apply Dofollo SEO fixes to your Next.js site automatically. The package fetches published fixes from the Dofollo public API at request time on the server, caches them for 5 minutes by default, and lets you apply them in server components, metadata functions, and middleware without rebuilding your app.
+Apply [Dofollo SEO fixes](https://dofollo.ai) to your Next.js site automatically. The package fetches published fixes from the Dofollo public API at request time on the server, caches them for 5 minutes by default, and lets you apply them in server components, metadata functions, and middleware without rebuilding your app.
 
 ## Install
 
