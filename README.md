@@ -242,3 +242,6 @@ npm run build
 npm login
 npm publish --access public
 ```
+## Support
+
+[Contact Dofollo team here](https://dofollo.ai/support/)
